@@ -6,8 +6,8 @@
  * Time: 06:14
  */
 
-var_dump($_COOKIE);
 if (!isset($_COOKIE["one"])) {
-    setcookie("one", 111, 3600);
+    setcookie("one", 111, time() + 3600);
     echo "cookies has added";
 };
+var_dump($_COOKIE);
