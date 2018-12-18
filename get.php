@@ -6,6 +6,4 @@
  * Time: 06:14
  */
 
-//require "header.php";
-
-var_dump($_GET);
+require "header.php";

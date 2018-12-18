@@ -8,6 +8,8 @@
 
 require "info.php";
 //require "info.php";
+echo "Request Head|";
+var_dump(getallheaders());
 echo "----------\n";
 
 
@@ -36,7 +38,7 @@ switch ($_SERVER["CONTENT_TYPE"]) {
 }
 
 file_put_contents($prefix . time() . $suffix, $putdata);
-
+echo "completion!";
 
 
 
@@ -72,3 +74,4 @@ file_put_contents($prefix . time() . $suffix, $putdata);
 ////关闭流，释放资源
 //fclose($fp);
 //fclose($putdata);
+//echo "completion!";

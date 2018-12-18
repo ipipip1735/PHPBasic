@@ -6,9 +6,6 @@
  * Time: 05:08
  */
 
-//设置响应头信息
-//header("Cache-Control: max-age=150");
-//header("Age: 100");
-
 //打印请求头信息
+echo "\n-----Request Header------\n";
 var_dump(getallheaders());
