@@ -11,8 +11,10 @@ require "info.php";
 echo "\n-----Request Header------\n";
 var_dump(getallheaders());
 
+echo "\n-----PUT-----\n";
 $putdata = file_get_contents('php://input', 'r');
 var_dump($putdata);
 
+echo "\n-----POST------\n";
 var_dump($_POST);
 
