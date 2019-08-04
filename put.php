@@ -21,7 +21,7 @@ if ($method != 'PUT') die("method is $method, not is PUT");
 //方法一：一次获取全部数据
 $putdata = file_get_contents('php://input', 'r');
 
-$prefix = "resources\\upload\\";
+$prefix = "res\\upload\\";
 //解析文件类型
 switch ($_SERVER["CONTENT_TYPE"]) {
     case 'image/jpeg':
@@ -49,7 +49,7 @@ echo "completion!";
 //
 ////每次读取1KB
 //$CHUNK = 1024;
-//$prefix = "resources\\upload\\";
+//$prefix = "res\\upload\\";
 ////解析文件类型
 //switch ($_SERVER["CONTENT_TYPE"]) {
 //    case 'image/jpeg':

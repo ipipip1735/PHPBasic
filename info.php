@@ -6,7 +6,7 @@
  * Time: 05:08
  */
 
-//phpinfo();
+phpinfo();
 //var_dump($_SERVER);
 
 if (!function_exists('getallheaders'))
